@@ -26,12 +26,6 @@ _ = require('underscore')
 # ## ByCoffeeScript Class
 module.exports = class ByCoffeeScript extends EventEmitter
 
-  # ### Class Properties
-  # `@csfile (String)` : CoffeeScript file path to compile  
-  # `@jsfile (String)` : Javascript destination file path to save compiled code to  
-  # `@lintConfig (Object)` : [Options](http://www.coffeelint.org/#options) for Coffeelint with `nolint` option added to avoid coffeelinting after compiling   
-  # `@mapper (Object)` : rules to map `@csfile` path to `@jsfile` path 
-
   # ### Events
   # `compiled` : successfully compiled `@csfile`  
   # `compile error` : failed to compile `@csfile`  
